@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('v_dashboaradmin');
+    return view('v_dashboardadmin');
 });
