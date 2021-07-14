@@ -1,7 +1,7 @@
 <ul class="sidebar-menu" data-widget="tree">
     <li class="header">MAIN NAVIGATION</li>
     <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="/"><i class="fa fa-dashboard"></i> <span>Menu Admin</span></a></li>
-    <li class="{{ request()->is('dt_guru') ? 'active' : '' }}"><a href="/guru"><i class="fa fa-dashboard"></i> <span>Data Guru</span></a></li>
+    <li class="{{ request()->is('dataguru') ? 'active' : '' }}"><a href="/dataguru"><i class="fa fa-dashboard"></i> <span>Data Guru</span></a></li>
     <li class="{{ request()->is('v_datasiswa_X') ? 'active' : '' }}"><a href="/siswa_kelas_X"><i class="fa fa-dashboard"></i> <span>Data Siswa Kelas 1</span></a></li>
     <li class="{{ request()->is('dt_siswa_XI') ? 'active' : '' }}"><a href="/siswa_kelas_XI"><i class="fa fa-dashboard"></i> <span>Data Siswa Kelas 2</span></a></li>
     <li class="{{ request()->is('dt_siswa_XII') ? 'active' : '' }}"><a href="/siswa_kelas_XII"><i class="fa fa-dashboard"></i> <span>Data Siswa Kelas 3</span></a></li>

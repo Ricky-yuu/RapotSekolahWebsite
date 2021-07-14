@@ -4,8 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class GuruModel extends Model
 {
-    use HasFactory;
+    public function alldata()
+    {
+        return DB::table('tb_guru')
+        ->join('mapel', 'mapel.id_mapel', '=', 'tb_guru.id_mapel')
+            ->get();
+    }
 }
