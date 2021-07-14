@@ -17,4 +17,15 @@ class GuruController extends Controller
         ];
         return view('v_dataguru', $data);
     }
+    public function detail($nip)
+    {
+        if (!$this->GuruModel->detaildata($nip))
+        {
+            abort(404);
+        }
+        $data = [
+            'guru' => $this->GuruModel->detaildata($nip),
+        ];
+        return view('v_detailguru', $data);
+    }
 }

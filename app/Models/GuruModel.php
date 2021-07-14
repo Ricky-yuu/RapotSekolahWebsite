@@ -14,4 +14,10 @@ class GuruModel extends Model
         ->join('mapel', 'mapel.id_mapel', '=', 'tb_guru.id_mapel')
             ->get();
     }
+    public function detaildata($nip)
+    {
+        return  DB::table('tb_guru')->where('nip', $nip)
+        ->join('mapel', 'mapel.id_mapel', '=', 'tb_guru.id_mapel')
+        ->first();
+    }
 }

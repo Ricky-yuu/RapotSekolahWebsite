@@ -19,4 +19,9 @@ Route::get('/', function () {
 });
 
 Route::get('/siswa_kelas_X',[AdminController::class,'index'])->name('Admin');
+
+
+
+
 Route::get('/dataguru',[GuruController::class,'index']);
+Route::get('/dataguru/detail/{nip}',[GuruController::class,'detail']);

@@ -4,7 +4,14 @@
 
 
 @section('content')
+<br>
+<br>
 
+<div class="container">
+    <a href="" class="btn btn-primary btn-sm">Add Konsumen</a>
+    <br><br>
+    </div>
+        
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -34,7 +41,7 @@
                 <td>{{ $data->nama_mapel }}</td>
                 
                 <td>
-                    <a href="" class="btn btn-sn. btn-success">Detail</a>
+                    <a href="/dataguru/detail/{{ $data->nip }}" class="btn btn-sn. btn-success">Detail</a>
                     <a href="" class="btn btn-sn. btn-warning">Edit</a>
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">
                         Delete
@@ -44,6 +51,7 @@
         @endforeach
     </tbody>
 </table>
+</div>
      
      
 
