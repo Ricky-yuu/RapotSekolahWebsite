@@ -5,8 +5,6 @@
 
 @section('content')
 
-ini halaman admin
+
      
-</body>
-</html>
 @endsection
