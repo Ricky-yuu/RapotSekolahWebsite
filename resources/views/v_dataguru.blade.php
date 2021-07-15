@@ -8,7 +8,7 @@
 <br>
 
 <div class="container">
-    <a href="" class="btn btn-primary btn-sm">Add Konsumen</a>
+    <a href="/dataguru/add" class="btn btn-primary btn-sm">Add Guru</a>
     <br><br>
     </div>
         
@@ -19,8 +19,8 @@
             <th>nip</th>
             <th>Nama Guru</th>
             <th>username</th>
+            <th>password</th>
             <th>email</th>
-            <th>telp</th>
             <th>Alamat</th>
             <th>Mapel</th>
             <th>Action</th>

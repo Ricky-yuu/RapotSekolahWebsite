@@ -25,3 +25,5 @@ Route::get('/siswa_kelas_X',[AdminController::class,'index'])->name('Admin');
 
 Route::get('/dataguru',[GuruController::class,'index']);
 Route::get('/dataguru/detail/{nip}',[GuruController::class,'detail']);
+Route::get('/dataguru/add',[GuruController::class,'add']);
+Route::post('/dataguru/insert',[GuruController::class,'insert']);

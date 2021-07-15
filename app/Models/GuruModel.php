@@ -19,5 +19,12 @@ class GuruModel extends Model
         return  DB::table('tb_guru')->where('nip', $nip)
         ->join('mapel', 'mapel.id_mapel', '=', 'tb_guru.id_mapel')
         ->first();
+    }public function adddata($data)
+    {
+        DB::table('tb_guru')
+        ->join('mapel', 'mapel.id_mapel', '=', 'tb_guru.id_mapel')
+        ->insert($data)
+        ;
+
     }
 }
