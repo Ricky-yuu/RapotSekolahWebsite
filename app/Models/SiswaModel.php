@@ -12,6 +12,7 @@ class SiswaModel extends Model
     {
         return DB::table('tb_siswa')
         ->join('kelas', 'kelas.id_kelas', '=', 'tb_siswa.id_kelas')
-            ->get();
+        ->where('kelas.tingkat','=','2')
+        ->get();
     }
 }

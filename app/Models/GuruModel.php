@@ -22,7 +22,7 @@ class GuruModel extends Model
     }public function adddata($data)
     {
         DB::table('tb_guru')
-        ->join('mapel', 'mapel.id_mapel', '=', 'tb_guru.id_mapel')
+        
         ->insert($data)
         ;
 

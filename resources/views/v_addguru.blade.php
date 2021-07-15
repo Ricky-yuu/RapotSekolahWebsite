@@ -70,9 +70,9 @@
                             </div>
                             <div class="form-group">
                                 <label >Alamat</label>
-                                <input type="text" name="telp" class="form-control " placeholder="alamat" value="{{ old('Alamat') }}">
+                                <input type="text" name="alamat" class="form-control " placeholder="alamat" value="{{ old('alamat') }}">
                                 <div class="text-denger">
-                                    @error('Alamat')
+                                    @error('alamat')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
