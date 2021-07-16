@@ -34,7 +34,7 @@
                 <td>{{ $data->kelas }}</td>
                 
                 <td>
-                    <a href="" class="btn btn-sn. btn-success">Detail</a>
+                    <a href="/datasiswa/siswa_kelas_X/{{ $data->nis }}" class="btn btn-sn. btn-success">Detail</a>
                     <a href="" class="btn btn-sn. btn-warning">Edit</a>
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">
                         Delete

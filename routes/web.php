@@ -4,6 +4,7 @@ use App\Http\Controllers\frontend\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuruController;
+use App\Http\Controllers\SiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,9 +24,6 @@ Route::get('/', function () {
 Route::resource('/home', HomeController::class);
 
 // Route::get('home', [HomeController::class , 'index'])->name('home');
-Route::get('/siswa_kelas_X',[AdminController::class,'index'])->name('Admin');
-
-
 
 
 Route::get('/dataguru',[GuruController::class,'index'])->name('dataguruindex');
@@ -37,3 +35,5 @@ Route::post('/dataguru/update/{nip}',[GuruController::class,'update']);
 Route::get('/dataguru/delete/{nip}',[GuruController::class,'delete']);
 
 
+Route::get('/siswa_kelas_X',[SiswaController::class,'index'])->name('siswa');
+Route::get('/datasiswa/siswa_kelas_X/{nis}',[SiswaController::class,'detail']);
