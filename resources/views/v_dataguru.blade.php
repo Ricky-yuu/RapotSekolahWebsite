@@ -42,8 +42,8 @@
                 
                 <td>
                     <a href="/dataguru/detail/{{ $data->nip }}" class="btn btn-sn. btn-success">Detail</a>
-                    <a href="" class="btn btn-sn. btn-warning">Edit</a>
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">
+                    <a href="/dataguru/edit/{{ $data->nip }}" class="btn btn-sn. btn-warning">Edit</a>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete{{ $data->nip }}">
                         Delete
                       </button>
                 </td>
@@ -51,7 +51,34 @@
         @endforeach
     </tbody>
 </table>
+
+
+@foreach ($guru as $data) 
+
+<div class="modal modal-danger fade" id="delete{{ $data->nip }}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">{{ $data->nama_guru }}</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Apakan anda yakin ingin menghapus data ini...?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">No</button>
+                    <a href="/dataguru/delete/{{ $data->nip }}}" class="btn btn-outline">Yes</a>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    @endforeach
+    
 </div>
+
      
      
 

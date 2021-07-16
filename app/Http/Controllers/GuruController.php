@@ -66,8 +66,42 @@ class GuruController extends Controller
         ];
         $this->GuruModel->adddata($data);
         return redirect()->route('dataguruindex')->with('pesan','data berhasil ditambahkan');
-     
-
-       
+          
+    }public function edit($nip)
+    {
+        
+        if (!$this->GuruModel->detaildata($nip))
+        {
+            abort(404);
+        }
+        $data = [
+            'nip' => $this->GuruModel->detaildata($nip),
+        ];
+        return view('v_editguru',$data);
     }
-}
+    public function update($nip)
+    {
+        $data = [
+            'nip' => request()->nip,
+            'nama_guru' => request()->nama_guru,
+            'username' => request()->username,
+            'password' => request()->password,
+            'email' => request()->email,
+            'alamat' => request()->alamat,
+            'id_mapel' => request()->nama_mapel,
+        ]; 
+        $this->GuruModel->editdata($nip, $data); 
+          
+        return redirect()->route('dataguruindex')->with('pesan','data berhasil diupdate');
+    }
+    public function delete($nip)
+    {
+        $this->GuruModel->deletedata($nip);  
+        return redirect()->route('dataguruindex')->with('pesan','data berhasil dihapus');
+    }
+    
+ 
+
+}   
+    
+

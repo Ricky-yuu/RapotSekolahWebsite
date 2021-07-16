@@ -32,3 +32,8 @@ Route::get('/dataguru',[GuruController::class,'index'])->name('dataguruindex');
 Route::get('/dataguru/detail/{nip}',[GuruController::class,'detail']);
 Route::get('/dataguru/add',[GuruController::class,'add']);
 Route::post('/dataguru/insert',[GuruController::class,'insert']);
+Route::get('/dataguru/edit/{nip}',[GuruController::class,'edit']);
+Route::post('/dataguru/update/{nip}',[GuruController::class,'update']);
+Route::get('/dataguru/delete/{nip}',[GuruController::class,'delete']);
+
+
