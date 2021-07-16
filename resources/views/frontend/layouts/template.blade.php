@@ -47,26 +47,19 @@
 
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+        <div class="pull-right hidden-xs">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>SD </h3>
+          <div class="mr-md-auto text-center text-md-right">
+            <h3>SD Negeri 58 Payakumbuh</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Jalan Tanjung Pinang <br>
+              Daya Bangun, Payakumbuh Barat<br>
+              Payakumbuh, Sumatera Barat 26221<br><br>
+              <strong>Phone:</strong> +6275290530<br>
+              <strong>Email:</strong> yulvirayaya@yahoo.com<br>
             </p>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
 
         </div>
       </div>
@@ -76,9 +69,12 @@
 
       <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">
-          &copy; Copyright <strong><span>2021</span></strong>. kel2 Tif-Inter'19
+          &copy; Copyright <strong><span>Raportku 2021</span></strong>. kel2 Tif-Inter'19
         </div>
       </div>
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+    </div>
     </div>
   </footer><!-- End Footer -->
 
