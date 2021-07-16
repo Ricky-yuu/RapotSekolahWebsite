@@ -29,4 +29,8 @@ class SiswaModel extends Model
         ->insert($data)
         ;
     }
+    public function deletedata($nis)
+    {
+        DB::table('tb_siswa')->where('nis', $nis)->delete();
+    }
 }

@@ -68,7 +68,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">No</button>
-                    <a href="/dataguru/delete/{{ $data->nip }}}" class="btn btn-outline">Yes</a>
+                    <a href="/dataguru/delete/{{ $data->nip }}" class="btn btn-outline">Yes</a>
                 </div>
             </div>
             <!-- /.modal-content -->

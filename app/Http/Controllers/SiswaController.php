@@ -68,4 +68,10 @@ class SiswaController extends Controller
         return redirect()->route('siswa')->with('pesan','data berhasil ditambahkan');
           
     }
+    public function delete($nis)
+    {
+        $this->SiswaModel->deletedata($nis);  
+        return redirect()->route('siswa')->with('pesan','data berhasil dihapus');
+    }
+    
 }
