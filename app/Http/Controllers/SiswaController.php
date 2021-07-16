@@ -28,4 +28,44 @@ class SiswaController extends Controller
         ];
         return view('v_detailsiswa', $data);
     }
+    public function add()
+    {
+        return view('v_addsiswa');
+    }
+    public function insert()
+    {
+        // Request()->validate([
+        //     'nip' => 'required|unique:tb_guru,nip',
+        //     'nama_guru' => 'required',
+        //     'username' => 'required',
+        //     'password' => 'required',
+        //     'email' => 'required',
+        //     'alamat' => 'required',
+        //     'mapel' => 'required',
+        // ],[
+        //     'nip.required' => 'wajib isi!!!',
+        //     'nip.unique' => 'username ini sudah ada!!!',
+        //     'username.required' => 'wajib isi!!!',
+        //     'nama_guru.required' => 'wajib isi!!!',
+        //     'password.required' => 'wajib isi!!!',
+        //     'email.required' => 'wajib isi!!!',
+        //     'alamat.required' => 'wajib isi!!!',
+        //     'mapel.required' => 'wajib isi!!!',
+
+        // ]); 
+
+        //upload gambar
+        $data = [
+            'nis' => request()->nis,
+            'nama_siswa' => request()->nama_siswa,
+            'username' => request()->username,
+            'password' => request()->password,
+            'email' => request()->email,
+            'alamat' => request()->alamat,
+            'id_kelas' => request()->kelas,
+        ];
+        $this->SiswaModel->adddata($data);
+        return redirect()->route('siswa')->with('pesan','data berhasil ditambahkan');
+          
+    }
 }

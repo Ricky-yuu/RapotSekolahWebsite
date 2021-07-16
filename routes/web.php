@@ -37,3 +37,5 @@ Route::get('/dataguru/delete/{nip}',[GuruController::class,'delete']);
 
 Route::get('/siswa_kelas_X',[SiswaController::class,'index'])->name('siswa');
 Route::get('/datasiswa/siswa_kelas_X/{nis}',[SiswaController::class,'detail']);
+Route::get('/datasiswa/add',[SiswaController::class,'add']);
+Route::post('/datasiswa/insert',[SiswaController::class,'insert']);

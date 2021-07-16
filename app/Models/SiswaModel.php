@@ -22,11 +22,11 @@ class SiswaModel extends Model
         ->first();
     }
     
-//     public function adddata($data)
-//     {
-//         DB::table('tb_guru')
+    public function adddata($data)
+    {
+        DB::table('tb_siswa')
         
-//         ->insert($data)
-//         ;
-//     }
+        ->insert($data)
+        ;
+    }
 }
