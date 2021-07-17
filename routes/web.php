@@ -40,7 +40,7 @@ Route::get('/datasiswa/delete/{nis}',[SiswaController::class,'delete']);
 
 Route::get('/dashboardguru',[DashboardguruController::class,'index'])->name('guru');
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

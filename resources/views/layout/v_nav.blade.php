@@ -1,10 +1,10 @@
 <ul class="sidebar-menu" data-widget="tree">
     <li class="header">MAIN NAVIGATION</li>
-    <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="/"><i class="fa fa-dashboard"></i> <span>Menu Admin</span></a></li>
-    <li class="{{ request()->is('dataguru') ? 'active' : '' }}"><a href="/dataguru"><i class="fa fa-dashboard"></i> <span>Data Guru</span></a></li>
-    <li class="{{ request()->is('v_datasiswa_X') ? 'active' : '' }}"><a href="/siswa_kelas_X"><i class="fa fa-dashboard"></i> <span>Data Siswa</span></a></li>
-    <li class="{{ request()->is('v_dashboardguru') ? 'active' : '' }}"><a href="/dashboardguru"><i class="fa fa-dashboard"></i> <span>Dashboard guru </span></a></li>
-    <li class="{{ request()->is('profil') ? 'active' : '' }}"><a href="/profil"><i class="fa fa-dashboard"></i> <span>profil guru</span></a></li>
+    <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="/"><i class="fa fa-circle"></i> <span>Menu Admin</span></a></li>
+    <li class="{{ request()->is('dataguru') ? 'active' : '' }}"><a href="/dataguru"><i class="fa fa-circle"></i> <span>Data Guru</span></a></li>
+    <li class="{{ request()->is('v_datasiswa_X') ? 'active' : '' }}"><a href="/siswa_kelas_X"><i class="fa fa-circle"></i> <span>Data Siswa</span></a></li>
+    <li class="{{ request()->is('v_dashboardguru') ? 'active' : '' }}"><a href="/dashboardguru"><i class="fa fa-circle"></i> <span>Dashboard guru </span></a></li>
+    <li class="{{ request()->is('profil') ? 'active' : '' }}"><a href="/profil"><i class="fa fa-circle"></i> <span>profil guru</span></a></li>
     <li class="treeview">
       <a href="#">
         <i class="fa fa-share"></i> <span>Multilevel</span>

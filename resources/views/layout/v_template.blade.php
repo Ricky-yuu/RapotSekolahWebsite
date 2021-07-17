@@ -59,28 +59,28 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
-       
 
 
-         
+
+
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="{{asset('templates')}}/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs"> {{ Auth::user()->name }}</span>
+              {{-- <span class="hidden-xs"> {{ Auth::user()->name }}</span> --}}
             </a>
-            <ul class="dropdown-menu"> 
+            <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
                 <img src="{{asset('templates')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  {{ Auth::user()->name }} - {{ Auth::user()->email }}
+                  {{-- {{ Auth::user()->name }} - {{ Auth::user()->email }} --}}
                   <small></small>
                 </p>
               </li>
               <!-- Menu Body -->
-         
+
                 <!-- /.row -->
               </li>
               <!-- Menu Footer-->
@@ -112,7 +112,7 @@
           <img src="{{asset('templates')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>  {{ Auth::user()->name }} </p>
+          {{-- <p>  {{ Auth::user()->name }} </p> --}}
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -142,8 +142,8 @@
               @yield('title')
             </h1>
         </section>
-        
-        
+
+
     </section>
     <!-- /.content -->
     @yield('content')
@@ -151,7 +151,7 @@
   <!-- /.content-wrapper -->
   @include('layout.v_footer')
 
- 
+
 
 
   <!-- /.control-sidebar -->
