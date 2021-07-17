@@ -40,3 +40,9 @@ Route::get('/datasiswa/siswa_kelas_X/{nis}',[SiswaController::class,'detail']);
 Route::get('/datasiswa/add',[SiswaController::class,'add']);
 Route::post('/datasiswa/insert',[SiswaController::class,'insert']);
 Route::get('/datasiswa/delete/{nis}',[SiswaController::class,'delete']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
