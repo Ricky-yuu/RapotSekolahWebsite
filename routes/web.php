@@ -17,12 +17,8 @@ use App\Http\Controllers\DashboardguruController;
 |
 */
 
-Route::get('/', function () {
-    return view('v_dashboardadmin');
-});
 
-
-Route::resource('/home', HomeController::class);
+Route::resource('/', HomeController::class);
 
 // Route::get('home', [HomeController::class , 'index'])->name('home');
 
@@ -44,8 +40,8 @@ Route::get('/datasiswa/delete/{nis}',[SiswaController::class,'delete']);
 
 Route::get('/dashboardguru',[DashboardguruController::class,'index'])->name('guru');
 
-// Auth::routes();
+Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
