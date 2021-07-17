@@ -6,7 +6,7 @@
 <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Learn For<br>The Future</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <h2>Dapatkan aplikasi Raportku dan lihat hasil belajarmu di sini</h2>
       <a href="courses.html" class="btn-get-started">Download Here</a>
     </div>
   </section><!-- End Hero -->
