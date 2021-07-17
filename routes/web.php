@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\DashboardguruController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,7 +42,9 @@ Route::get('/datasiswa/add',[SiswaController::class,'add']);
 Route::post('/datasiswa/insert',[SiswaController::class,'insert']);
 Route::get('/datasiswa/delete/{nis}',[SiswaController::class,'delete']);
 
-Auth::routes();
+Route::get('/dashboardguru',[DashboardguruController::class,'index'])->name('guru');
+
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
