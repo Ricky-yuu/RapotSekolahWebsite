@@ -39,7 +39,7 @@ Route::post('/datasiswa/insert',[SiswaController::class,'insert']);
 Route::get('/datasiswa/delete/{nis}',[SiswaController::class,'delete']);
 
 Route::get('/dashboardguru',[DashboardguruController::class,'index'])->name('guru');
-
+Route::get('/dashboardguru/inputnilaisiswa',[DashboardguruController::class,'input']);
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
