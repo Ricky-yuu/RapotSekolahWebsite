@@ -11,14 +11,14 @@ class GuruModel extends Model
     public function alldata()
     {
         return DB::table('tb_guru')
-        ->join('mapel', 'mapel.id_mapel', '=', 'tb_guru.id_mapel')
+        ->join('kelas', 'kelas.id_kelas', '=', 'tb_guru.id_kelas')
             ->get();
     }
 
     public function detaildata($nip)
     {
         return  DB::table('tb_guru')->where('nip', $nip)
-        ->join('mapel', 'mapel.id_mapel', '=', 'tb_guru.id_mapel')
+        ->join('kelas', 'kelas.id_kelas', '=', 'tb_guru.id_kelas')
         ->first();
     }
     

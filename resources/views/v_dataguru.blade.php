@@ -22,7 +22,7 @@
             <th>password</th>
             <th>email</th>
             <th>Alamat</th>
-            <th>Mapel</th>
+            <th>kelas</th>
             <th>Action</th>
             
         </tr>
@@ -38,7 +38,7 @@
                 <td>{{ $data->password }}</td>
                 <td>{{ $data->email }}</td>
                 <td>{{ $data->alamat }}</td>
-                <td>{{ $data->nama_mapel }}</td>
+                <td>{{ $data->kelas }}</td>
                 
                 <td>
                     <a href="/dataguru/detail/{{ $data->nip }}" class="btn btn-sn. btn-success">Detail</a>
