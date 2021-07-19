@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\DashboardguruController;
+use App\Http\Controllers\MuridController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,6 +38,8 @@ Route::get('/datasiswa/siswa_kelas_X/{nis}',[SiswaController::class,'detail']);
 Route::get('/datasiswa/add',[SiswaController::class,'add']);
 Route::post('/datasiswa/insert',[SiswaController::class,'insert']);
 Route::get('/datasiswa/delete/{nis}',[SiswaController::class,'delete']);
+
+Route::get('/datasiswa',[MuridController::class, 'index']);
 
 Route::get('/dashboardguru',[DashboardguruController::class,'index'])->name('guru');
 Route::get('/dashboardguru/inputnilaisiswa',[DashboardguruController::class,'input']);
